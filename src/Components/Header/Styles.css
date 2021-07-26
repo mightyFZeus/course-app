@@ -1,0 +1,70 @@
+
+li{
+    margin-right: 2em;
+    color: black;
+    cursor:pointer;
+    float:left;
+    display:block;
+    font-weight:700
+  }
+  
+  ul{
+    margin-left:auto
+  }
+
+  .road-to{
+      width:500px;
+     
+  }
+  @media only screen and (max-width: 600px){
+    .road-to{
+        width:270px;
+       
+    }
+  
+  
+  }
+  
+
+  .web-dev{
+      margin-top: 7em;
+      padding-left: 3em;
+      
+      margin-bottom: 8em;
+  }
+
+  .learn{
+      font-size: 15px;
+  }
+
+  h2{
+      font-size: 40px;
+      font-weight: bold;
+      margin-bottom: .4em;
+  }
+
+  .courses-btn{
+  
+    background-color: #412BB5;
+      
+  text-transform: none;
+  color: white;
+  border: 1px solid #fff;
+
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 2em;
+  
+  cursor:pointer;
+  
+      
+  }
+
+  .courses-btn:hover{
+      background-color: #fff;
+      color:#412BB5;
+      border: 1px solid #412BB5;
+  }
