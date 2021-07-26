@@ -115,7 +115,7 @@ const Language = () => {
                                  <img  src={lang.image} />
                                  <h4>{lang.language}</h4>
                                  <p className='teach'>{lang.courses},<span>{lang.teachers}</span></p>
-                                
+                                 
                             </div>
                         
                         
