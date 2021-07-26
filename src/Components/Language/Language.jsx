@@ -112,7 +112,7 @@ const Language = () => {
                            style={{padding:'15px'}}
                            >
                             <div className='lang-div'>
-                                 <img  src={lang.image} />
+                                 <img alt={lang.language}  src={lang.image} />
                                  <h4>{lang.language}</h4>
                                  <p className='teach'>{lang.courses},<span>{lang.teachers}</span></p>
                                  
