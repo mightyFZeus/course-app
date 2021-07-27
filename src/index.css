@@ -14,4 +14,12 @@ code {
 
 }
 
-/* \ */
+.MuiDrawer-paper {
+width: 60% !important;
+}
+
+/* @media (max-width: 1200px) {
+    .MuiDrawer-paper {
+ width: 100% !important;
+ }
+} */

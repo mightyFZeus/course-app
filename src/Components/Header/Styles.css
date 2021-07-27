@@ -28,7 +28,7 @@ li{
 
   .web-dev{
       margin-top: 7em;
-      padding-left: 3em;
+      padding: none;
       
       margin-bottom: 8em;
   }

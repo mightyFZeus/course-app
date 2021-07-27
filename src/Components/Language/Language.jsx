@@ -1,5 +1,5 @@
 import React from 'react'
-import {Grid, Card} from '@material-ui/core'
+import {Grid, Card, CardContent} from '@material-ui/core'
 import uuid from "react-uuid";
 import useStyles from './Style'
 import './Styles.css'
@@ -14,13 +14,16 @@ import cplus from '../../assests/images/cplus.svg'
 import typescript from '../../assests/images/typescript.svg'
 import php from '../../assests/images/php.png'
 
+import {Link} from 'react-router-dom'
+
 const programmingLanguages = [
     {
         id: uuid(),
         language: "React",
         courses:'14 Courses',
         teachers:'3 Teachers',
-        image: react
+        image: react,
+        path: '/react-review'
 
     },
     {
@@ -28,7 +31,8 @@ const programmingLanguages = [
         language: "JavaScript",
         courses:'37 Courses',
         teachers:'6 Teachers',
-        image: javascript
+        image: javascript,
+        path:'/js-review'
 
     },
 
@@ -37,7 +41,8 @@ const programmingLanguages = [
         language: "Typescript",
         courses:'42 Courses',
         teachers:'9 Teachers',
-        image: typescript
+        image: typescript,
+        path:'/ts-review'
 
     },
     {
@@ -45,7 +50,8 @@ const programmingLanguages = [
         language: "Angular",
         courses:'14 Courses',
         teachers:'3 Teachers',
-        image: angualr
+        image: angualr,
+        path:'/ag-review'
 
     },
     {
@@ -53,7 +59,8 @@ const programmingLanguages = [
         language: "CSS",
         courses:'14 Courses',
         teachers:'3 Teachers',
-        image:css
+        image:css,
+        path:'/css-review'
 
     },
     {
@@ -61,7 +68,8 @@ const programmingLanguages = [
         language: "HTML",
         courses:'20 Courses',
         teachers:'5 Teachers',
-        image:html
+        image:html,
+        path:'/html-review'
 
     },
     {
@@ -69,23 +77,25 @@ const programmingLanguages = [
         language: "PHP",
         courses:'15 Courses',
         teachers:'6 Teachers',
-        image:php
-
+        image:php,
+        path:'/php-review'
     },
     {
         id: uuid(),
-        language: "JAVA",
+        language: "Java",
         courses:'30 Courses',
         teachers:'7 Teachers',
-        image:java
+        image:java,
+        path:'/java-review'
 
     },
     {
         id: uuid(),
-        language: "PYTHON",
+        language: "Python",
         courses:'17 Courses',
         teachers:'10 Teachers',
-        image:python
+        image:python,
+        path:'/py-review'
 
     },
     {
@@ -93,7 +103,8 @@ const programmingLanguages = [
         language: "C++",
         courses:'17 Courses',
         teachers:'11 Teachers',
-        image:cplus
+        image:cplus,
+        path:'/c++-review'
 
     }
 ]
@@ -104,19 +115,22 @@ const Language = () => {
         <div>
              <Grid  container justify="center" spacing={2}>
                  {programmingLanguages.map((lang) =>(
-                        <Grid className={classes.card}
-                         component={Card} 
+                        <Grid component={Link} to={lang.path} className={classes.card}
                          item key={lang.id}
                           xs={12} sm={12}
                            md={2} lg={4}
                            style={{padding:'15px'}}
                            >
-                            <div className='lang-div'>
-                                 <img alt={lang.language}  src={lang.image} />
-                                 <h4>{lang.language}</h4>
-                                 <p className='teach'>{lang.courses},<span>{lang.teachers}</span></p>
+                            <Card>
+                                <CardContent>
+                                    
+                                    <img alt={lang.language}  src={lang.image} />
+                                    <h4>{lang.language}</h4>
+                                    <p className='teach'>{lang.courses},<span>{lang.teachers}</span></p>
                                  
-                            </div>
+                                
+                                </CardContent>
+                            </Card>
                         
                         
                         </Grid>

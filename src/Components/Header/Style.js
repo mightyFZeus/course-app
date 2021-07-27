@@ -6,7 +6,11 @@ export default makeStyles((theme) => ({
    
    backgroundColor:'#ffffff'
   },
-  box:{
-    justify:'center'
+  menu:{
+    marginLeft: "auto",
+    
+  },
+  test:{
+    width:'200px'
   }
 }));

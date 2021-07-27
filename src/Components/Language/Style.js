@@ -7,7 +7,7 @@ export default makeStyles((theme) => ({
        
         marginBottom: '3em',
         [theme.breakpoints.down('sm')]: {
-             marginRight:'1em',
+          
              textAlign:'center',
               
           },
