@@ -39,7 +39,7 @@ const PythonReview = () => {
                     </p>
                 </div>
             </div>
-            <a target='_blank' href='https://www.python.org/'>
+            <a target='_blank' rel="noopener noreferrer" href='https://www.python.org/'>
                 <p>See the official documentaion here</p>
                  <button>See Tutors</button>
             </a>

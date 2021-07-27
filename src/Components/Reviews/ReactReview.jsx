@@ -35,7 +35,7 @@ const ReactReview =() =>{
                     </p>
                 </div>
             </div>
-            <a target='_blank' href='https://reactjs.org/'>
+            <a target='_blank' rel="noopener noreferrer" href='https://reactjs.org/'>
                 <p>See the official documentaion here</p>
                 <button>See Tutors</button>
             </a>
