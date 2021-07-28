@@ -127,6 +127,7 @@ const Language = () => {
                                     <img alt={lang.language}  src={lang.image} />
                                     <h4>{lang.language}</h4>
                                     <p className='teach'>{lang.courses},<span>{lang.teachers}</span></p>
+                                    <p>Click me >>></p>
                                  
                                 
                                 </CardContent>
