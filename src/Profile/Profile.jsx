@@ -123,8 +123,15 @@ const Profile = () => {
                            <Card>
                                <CardContent>
                                <div className='profile'>
+                                    <div className='profile-img'>
+                                        <AccountCircleIcon style={{fontSize:'120px'}} />
+                                    </div>
+                                   
                                     <div>
                                         <h4>{tutor.name}</h4>
+                                    </div>
+                                     <div>
+                                        
                                         <p>{tutor.language_taught}</p>
                                         <div className='profile-social-img'>
                                             <a rel="noopener noreferrer"  href={tutor.youtube} target='_blank'>
@@ -141,9 +148,7 @@ const Profile = () => {
                                             </a>
                                         </div>
                                     </div>
-                                    <div className='profile-img'>
-                                        <AccountCircleIcon style={{fontSize:'120px'}} />
-                                    </div>
+                                    
                                 </div>
                                 
                                </CardContent>

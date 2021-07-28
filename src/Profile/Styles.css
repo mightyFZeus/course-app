@@ -1,14 +1,15 @@
+a{
+    all: unset;
+}
+
+
 .profile-social-img{
     display:flex;
-    gap:10px;
-    text-align: center;
+    gap:30px;
+    align-items: center;
+    justify-content: center;
 }
 
 .profile{
-    display: flex;
-    gap:15px
-}
-
-a{
-    color:initial
+    text-align: center;
 }
