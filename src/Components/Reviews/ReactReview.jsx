@@ -37,8 +37,9 @@ const ReactReview =() =>{
             </div>
             <a target='_blank' rel="noopener noreferrer" href='https://reactjs.org/'>
                 <p>See the official documentaion here</p>
-                <button>See Tutors</button>
+                
             </a>
+            <button className='tutor-btn'> Tutor Me</button>
         </>
     )
 }
