@@ -1,5 +1,6 @@
 import React from 'react'
-
+import '../../Styles.css'
+import {Link} from 'react-router-dom'
 const HtmlReview = () => {
     return (
         <div>
@@ -25,7 +26,9 @@ HTML provides a means to create structured documents by denoting structural sema
                 <p>See W3schools documentaion here</p>
                 
             </a>
-            <button className='tutor-btn'> Tutor Me</button>
+            <Link to='/profile'>
+                 <button  className='tutor-btn'> Tutor Me</button>
+            </Link>
         </div>
     )
 }

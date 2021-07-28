@@ -1,4 +1,6 @@
 import React from 'react'
+import '../../Styles.css'
+import {Link} from 'react-router-dom'
 
 const PhpReview = () => {
     return (
@@ -28,7 +30,9 @@ const PhpReview = () => {
                 <p>See official documentaion here</p>
                 
             </a>
-            <button className='tutor-btn'> Tutor Me</button>
+            <Link to='/profile'>
+                 <button  className='tutor-btn'> Tutor Me</button>
+            </Link>
         </div>
     )
 }

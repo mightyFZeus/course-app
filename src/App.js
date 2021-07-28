@@ -11,7 +11,7 @@ import CplusReview from './Components/Reviews/CplusReview'
 import PhpReview from './Components/Reviews/PhpReview'
 import PythonReview from './Components/Reviews/PythonReview'
 import TypescriptReview from './Components/Reviews/TypescriptReview'
-
+import Profile from './Profile/Profile'
 import AngularReview from './Components/Reviews/AngularReview'
 
 import {BrowserRouter as Router, Route} from 'react-router-dom'
@@ -36,6 +36,7 @@ export default function App() {
       <Route path='/java-review' component={JavaReview} />
       <Route path='/ag-review' component={AngularReview} />
       <Route path='/c++-review' component={CplusReview} />
+      <Route path='/profile' component={Profile} />
 
    </div>
     </Router>

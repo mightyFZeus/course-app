@@ -1,4 +1,6 @@
 import React from 'react'
+import '../../Styles.css'
+import {Link} from 'react-router-dom'
 
 const TypescriptReview = () => {
     return (
@@ -31,7 +33,9 @@ const TypescriptReview = () => {
                 <p>See the official documentaion here</p>
                 
             </a>
-            <button className='tutor-btn'> Tutor Me</button>
+            <Link to='/profile'>
+                 <button  className='tutor-btn'> Tutor Me</button>
+            </Link>
         </div>
     )
 }

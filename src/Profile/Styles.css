@@ -1,0 +1,14 @@
+.profile-social-img{
+    display:flex;
+    gap:10px;
+    text-align: center;
+}
+
+.profile{
+    display: flex;
+    gap:15px
+}
+
+a{
+    color:initial
+}
