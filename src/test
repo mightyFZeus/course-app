@@ -1,0 +1,7 @@
+//  (Object.entries(tutor.language_taught).map((value, key)=>
+                                    //     <p key={key}>{value}</p>
+                                    //  ))
+
+                                    Object.entries(tutor.language_taught).forEach(([key, value]) => {
+                                        console.log(`${key} ${value}`); // "a 5", "b 7", "c 9"
+                                      })

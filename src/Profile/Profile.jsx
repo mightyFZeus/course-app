@@ -19,7 +19,13 @@ const tutors = [
             youtube: 'https://www.youtube.com/c/traversymedia',
             twitter: 'https://www.twitter.com/traversymedia',
             site:'https://traversymedia.com/',
-            language_taught: "Css, React, Html, Node, Boostrap",
+            language_taught: {
+                css:'Css',
+                html:'Html',
+                react:'React',
+                node:'Node',
+                bootstrap:'Boostrap'
+            },
             github:'https://www.github.com/bradtraversy'
                 
             
@@ -30,7 +36,13 @@ const tutors = [
             youtube: 'https://www.youtube.com/c/deved',
             twitter: 'https://www.twitter.com/deved94',
             site:'https://developedbyed.com/',
-            language_taught: "Css, react",
+            language_taught: {
+                css:'Css',
+                html:'Html',
+                react:'React',
+                node:'Node',
+                bootstrap:'Boostrap'
+            },
             github:'https://www.github.com/developedbyed'
                 
             
@@ -42,7 +54,13 @@ const tutors = [
             twitter: 'https://www.twitter.com/webdevsimplified',
             site:'',
             udemy:udemy,
-            language_taught: "Css, React, Javascript, Node ",
+            language_taught: {
+                css:'Css',
+                html:'Html',
+                react:'React',
+                node:'Node',
+                bootstrap:'Boostrap'
+            },
             github:'https://www.github.com/webdevsimplified'
                 
             
@@ -54,7 +72,13 @@ const tutors = [
             twitter: 'https://www.twitter.com/thenetninjauk',
             site:'https://netninja.dev',
            
-            language_taught: "Css, React, React-Native",
+            language_taught: {
+                css:'Css',
+                html:'Html',
+                react:'React',
+                node:'Node',
+                bootstrap:'Boostrap'
+            },
             github:'https://www.github.com/thenetninja'
                 
             
@@ -66,7 +90,13 @@ const tutors = [
             youtube: 'https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ',
             twitter:'https://www.twitter.com/freecodecamp',
             site:'https://freecodecamp.org',
-            language_taught: "Css, react, python, c++, C#, java",
+            language_taught: {
+                css:'Css',
+                html:'Html',
+                react:'React',
+                node:'Node',
+                bootstrap:'Boostrap'
+            },
             github:'https://github.com/freecodecamp'
                 
             
@@ -78,7 +108,13 @@ const tutors = [
             youtube:'https://www.youtube.com/channel/UCmXmlB4-HJytD7wek0Uo97A',
             twitter: 'https://twitter.com/JS_Mastery',
             site:' https://bit.ly/MasterJavaScript',
-            language_taught: "Css, React, Node, Html",
+            language_taught: {
+                css:'Css',
+                html:'Html',
+                react:'React',
+                node:'Node',
+                bootstrap:'Boostrap'
+            },
             github:'https://github.com/adrianhajdin'
                 
             
@@ -87,7 +123,13 @@ const tutors = [
             id: uuid(),
             name: 'Uzoanya Dominic',
             youtube: 'https://www.youtube.com/channel/UC9baFhLF3bCEPSZgje4k99A',
-            language_taught: "Css, react, Html, Node",
+            language_taught: {
+                css:'Css',
+                html:'Html',
+                react:'React',
+                node:'Node',
+                bootstrap:'Boostrap'
+            },
             
                 
             
@@ -97,6 +139,11 @@ const tutors = [
             name: 'KadetxX',
             github:'https://github.com/kadetXx/',
             site:'https://kadet.dev/',
+            language_taught: {
+              
+                react:'React',
+               
+            },
             
             
                 
@@ -106,6 +153,8 @@ const tutors = [
 
 
 ]
+
+
 
 const Profile = () => {
     return (
@@ -130,27 +179,34 @@ const Profile = () => {
                                     <div>
                                         <h4>{tutor.name}</h4>
                                     </div>
+                                    <div  className='language-taught-div' >
+                                { (Object.values(tutor.language_taught).map((value, key)=>
+                                      
+                                            <p className='language-taught' key={key}>{value}</p>
+                                      
+                                     ))}
+                                 </div>
                                      <div>
                                         
-                                        <p>{tutor.language_taught}</p>
+                                    
                                         <div className='profile-social-img'>
-                                            <a rel="noopener noreferrer"  href={tutor.youtube} target='_blank'>
+                                            <a className='youtube' rel="noopener noreferrer"  href={tutor.youtube} target='_blank'>
                                                 <YouTubeIcon />
                                             </a>
-                                            <a rel="noopener noreferrer"  href={tutor.twitter} target='_blank'>
+                                            <a className='twitter' rel="noopener noreferrer"  href={tutor.twitter} target='_blank'>
                                                 <TwitterIcon />
                                             </a>
                                             <a rel="noopener noreferrer" target='_blank'  href={tutor.site}>
                                              <VisibilityIcon />
                                             </a>
-                                            <a rel="noopener noreferrer"  href={tutor.github} target='_blank'>
+                                            <a className='github' rel="noopener noreferrer"  href={tutor.github} target='_blank'>
                                                 <GitHubIcon />
                                             </a>
                                         </div>
                                     </div>
                                     
                                 </div>
-                                
+                              
                                </CardContent>
                            </Card>
                         
